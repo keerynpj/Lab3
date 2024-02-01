@@ -14,20 +14,20 @@ Description : Understanding Old-School HTML Layouts.
     <style>
         table { width: 100%; }
         td { vertical-align: top;}
-        /*
+        
         td { border: 1px dashed gray; } 
-        */
+        
         #header, #footer { background-color: #f2f2f2; text-align: center; padding: 10px; }
         #menu { width: 150px; background-color: #e6e6e6; }
         #main { padding: 15px; }
         #footer { position: fixed; bottom: 0; width: 100%;}
 
         .news-item { padding: 10px; }
-        /*
+        
         .large { width: 100%; }
         .medium { width: 70%; }
         .small { width: 30%; }
-        */
+        
     </style>
 </head>
 <body>
@@ -65,48 +65,49 @@ Description : Understanding Old-School HTML Layouts.
                     </td>
                 </tr>
                 <tr>
-                    
-                    <td class="small news-item" colspan="2">
-                        <!-- Small news item -->
+                    <table cellpadding="0" cellspacing="0">
+                        <td class="small news-item" colspan="2">
+                            <!-- Small news item -->
 
-                        <header>
-                            <h1>Calgary's Natural Beauty Captivates Tourists</h1>
-                        </header>
+                            <header>
+                                <h1>Calgary's Natural Beauty Captivates Tourists</h1>
+                            </header>
+                            
+                            <img src="images/small.jpg" alt="Small Image" width="100%">
+                            
+                            <article>
+                                <h2>Emerald Oasis in the Heart of the City</h2>
+                                <p>Calgary, known for its vibrant city life, is now gaining fame for its lush green spaces and rich biodiversity. The city's parks and riversides have become a haven for nature lovers.</p>
                         
-                        <img src="images/small.jpg" alt="Small Image" width="100%">
+                                <h3>Urban Wildlife Flourishes</h3>
+                                <p>Recent reports indicate a rise in urban wildlife sightings, adding to the city's allure. Deer, coyotes, and various bird species are now common sights in Calgary's green spaces.</p>
                         
-                        <article>
-                            <h2>Emerald Oasis in the Heart of the City</h2>
-                            <p>Calgary, known for its vibrant city life, is now gaining fame for its lush green spaces and rich biodiversity. The city's parks and riversides have become a haven for nature lovers.</p>
-                    
-                            <h3>Urban Wildlife Flourishes</h3>
-                            <p>Recent reports indicate a rise in urban wildlife sightings, adding to the city's allure. Deer, coyotes, and various bird species are now common sights in Calgary's green spaces.</p>
-                    
-                            <h3>A Green Transformation</h3>
-                            <p>The transformation of the city into a green paradise has been praised by environmentalists, calling it a perfect blend of urban development and nature conservation.</p>
-                        </article>
+                                <h3>A Green Transformation</h3>
+                                <p>The transformation of the city into a green paradise has been praised by environmentalists, calling it a perfect blend of urban development and nature conservation.</p>
+                            </article>
 
-                    </td>
-                    <td class="medium news-item">
-                        <!-- Medium news item -->
-                        <header>
-                            <h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
-                        </header>
+                        </td>
+                        <td class="medium news-item">
+                            <!-- Medium news item -->
+                            <header>
+                                <h1>Cody Casselman Takes a Historic Spacewalk Near the ISS</h1>
+                            </header>
 
-                        <img src="images/medium.jpg" alt="Medium Image" width="100%">
-                        <article>
-                            <h2>A Historic Moment in Space Exploration</h2>
-                            <p>In an unprecedented feat of human courage and technological prowess, astronaut Mahdi Ansari completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
+                            <img src="images/medium.jpg" alt="Medium Image" width="100%">
+                            <article>
+                                <h2>A Historic Moment in Space Exploration</h2>
+                                <p>In an unprecedented feat of human courage and technological prowess, astronaut Mahdi Ansari completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
 
-                            <h3>A Breathtaking Journey</h3>
-                            <p>Ansari, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
+                                <h3>A Breathtaking Journey</h3>
+                                <p>Ansari, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
 
-                            <h3>Pushing the Boundaries of Science</h3>
-                            <p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
-                        </article>
-                    </td>                
-                    
+                                <h3>Pushing the Boundaries of Science</h3>
+                                <p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
+                            </article>
+                        </td>                
+                    </table>    
                 </tr>
+                    
             </table>
             
         </td>
