@@ -1,0 +1,95 @@
+<!--
+=========================================================
+Name        : index.html
+Assignment  : Lab 3 Exercise D
+Author(s)   : Mahdi Ansari, William Arthur Philip Louis
+Submission  : May 21, 2030
+Description : Learning CSS.
+=========================================================
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Advanced Demonstrations</title>
+    <style>
+        #margin-demo {
+            /*Modify #margin-demo to have a margin of 30px and a solid black border of 2px. Also, the borders must fit the content.*/
+        }
+
+        .padding-demo {
+            /*Adjust .padding-demo to include 30px padding and a dashed red border of 2px.*/
+        }
+
+        .container .nested-opacity {
+            /*Change the opacity of .nested-opacity to 0.2!*/
+        }
+
+        
+        .inline-demo {
+            /*Change the display to see all elements of this type in a line.*/
+            margin: 15px;
+        }
+
+        .block-demo {
+            /*Ensure .block-demo centers its text.*/
+        }
+
+        /*
+        Apply colors and float properties to the children of .block-demo. 
+        The first child should be red and stick to left side, the second blue and sit in the middle, and the third green and stick to right side. 
+        Here, you might need to look at the technique we used for the first and second children.
+        */
+
+        .block-demo > .inline-demo:first-child {            
+            /*
+            Add CSS that I stick the first child to the left side of the screen.
+            */
+            color: red;
+            
+        }
+
+        .block-demo > .inline-demo:nth-child(2) {            
+            color: blue;
+        }
+
+        /* Add your css for the thrid child here. */
+
+        .image-demo {
+            /* Modify the .image-demo class to adjust the image's width to 50% of the screen. */
+            border: 2px solid blue;
+        }
+
+        .hover-demo:hover {
+            /*Create a hover effect for .hover-demo that changes its color to blue and cursor to grabbing.*/
+        }
+    </style>
+</head>
+<body style="border: 1px solid black;">
+
+    <h2>CSS Margins with ID</h2>
+    <div id="margin-demo"><span>This div must have a margin of 30px, and a solid black border of 2px.</span></div>
+
+    <h2>CSS Padding</h2>
+    <div class="padding-demo"><span>This div must have padding of 30px, and a dashed red border of 2px.</span></div>
+
+    <h2>CSS Opacity with Nested Classes</h2>
+    <div class="container">
+        <div class="nested-opacity"><span>This text must have an opacity of 0.2.</span></div>
+    </div>
+
+    <h2>CSS Display Property</h2>
+    <div class="block-demo">
+        <div class="inline-demo"><span>I am red.</span></div>
+        <div class="inline-demo"><span>I am blue.</span></div>
+        <div class="inline-demo"><span>I am green.</span></div>
+    </div>    
+
+    <h2>CSS Image Styling with Inline CSS</h2>
+    <!-- Add a dotted green border of 3px inline. Which style will win the competition? -->
+    <img class="image-demo" style="" src="images/example.svg" alt="Demo Image">
+
+    <h2>CSS Hover Effects</h2>
+    <div class="hover-demo"><span>Hover over me! My color will change to blue!</span></div>
+
+</body>
+</html>
