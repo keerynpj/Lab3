@@ -14,24 +14,32 @@ Description : Learning CSS.
     <style>
         #margin-demo {
             /*Modify #margin-demo to have a margin of 30px and a solid black border of 2px. Also, the borders must fit the content.*/
+            margin: 30px;
+            border: 2px solid black;
+            width: fit-content;
         }
 
         .padding-demo {
             /*Adjust .padding-demo to include 30px padding and a dashed red border of 2px.*/
+            padding: 30px;
+            border: 2px dashed red;
         }
 
         .container .nested-opacity {
             /*Change the opacity of .nested-opacity to 0.2!*/
+            opacity: 0.2;
         }
 
         
         .inline-demo {
             /*Change the display to see all elements of this type in a line.*/
             margin: 15px;
+            display: inline-block;
         }
 
         .block-demo {
             /*Ensure .block-demo centers its text.*/
+            text-align: center;
         }
 
         /*
@@ -44,23 +52,33 @@ Description : Learning CSS.
             /*
             Add CSS that I stick the first child to the left side of the screen.
             */
+            float: left;
             color: red;
-            
         }
 
-        .block-demo > .inline-demo:nth-child(2) {            
+        .block-demo > .inline-demo:nth-child(2) {        
             color: blue;
+
+        }
+        
+        /* Add your css for the thrid child here. */
+        .block-demo > .inline-demo:nth-child(3) {
+            float: right;
+            color: green;
         }
 
-        /* Add your css for the thrid child here. */
+        
 
         .image-demo {
             /* Modify the .image-demo class to adjust the image's width to 50% of the screen. */
-            border: 2px solid blue;
+            border: 2px dashed green;
+            width: 50%;
         }
 
         .hover-demo:hover {
             /*Create a hover effect for .hover-demo that changes its color to blue and cursor to grabbing.*/
+            color: blue;
+            cursor: grabbing;
         }
     </style>
 </head>
